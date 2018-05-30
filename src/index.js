@@ -5,9 +5,14 @@ import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(
-    <App store={Store.getState()} />,
-    document.getElementById('root')
-);
+const render = () => {
+    ReactDOM.render(
+        <App store={Store} />,
+        document.getElementById('root')
+    );
+};
+
+Store.subscribe(render);
+render();
 
 registerServiceWorker();
