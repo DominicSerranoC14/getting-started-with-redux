@@ -2,8 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Store from './store/index.js';
 import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import App from './App.jsx';
 
 const render = () => {
     ReactDOM.render(
@@ -14,5 +13,3 @@ const render = () => {
 
 Store.subscribe(render);
 render();
-
-registerServiceWorker();
