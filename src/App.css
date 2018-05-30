@@ -4,6 +4,7 @@
 
 .App .nav-bar {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   list-style-type: none;
   padding: 0;
@@ -12,4 +13,12 @@
 .App .nav-bar a {
   color: blue;
   text-decoration: none;
+}
+
+.complete-todo {
+  color: green;
+}
+
+.incomplete-todo {
+  color: red;
 }
